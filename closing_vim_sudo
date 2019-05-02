@@ -1,0 +1,12 @@
+#You accidenntly open a file with your user, files owner is someone else or root. 
+#you do :wq "ohh snap!!!!"  Can't open file for writing is prompted you cant save your changes and close the file!!!!
+#to overcome this go to exec mode 
+:w !sudo tee %
+#then it will prompt 
+#W12: Warning: File "/usr/bin/asg" has changed and the buffer was changed in Vim as well
+#See ":help W12" for more info.
+#[O]K, (L)oad File:
+O
+#Press ENTER or type command to continue
+#press enter then exit with 
+:q!
