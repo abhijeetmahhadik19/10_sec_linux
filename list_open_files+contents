@@ -1,0 +1,12 @@
+#Sometimes you need to list a bunch of files contents in a directory
+#you can do 
+cat file1 file2 file3
+#if you need to list all the contents of all the files in a directory then you can simple change to that directory
+cd /absolute_path_to_that_directory
+cat *
+#But this only shows the contents inside the file and will not give an idea about which filename contains which contet
+#To show whih file contans what content
+cd /absolute_path_to_that_directory
+tail -n +1 *
+#or 
+tail -n +1 file1 file2 file3
