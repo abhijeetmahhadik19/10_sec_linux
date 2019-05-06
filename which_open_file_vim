@@ -1,0 +1,10 @@
+#Many times we open a file in vim start editing it and go for a coffee or something
+#We forget what file we opened and were editing 
+#There are 2-3 methods from which we can know which file we have opened.
+#all these methods work in exec mode of vim
+ctrl + g
+#if many files are open then 
+1 ctrl + g
+2 ctrl + g
+:f
+:ls
